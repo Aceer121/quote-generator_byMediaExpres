@@ -22,7 +22,8 @@ function complete() {
 
 //Show new quote
 function newQuote() {
-// Pick a random quote
+    loading();
+    // Pick a random quote
 //     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 //     console.log(quote)
     const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
@@ -40,7 +41,7 @@ function newQuote() {
     } 
     // Set quote, hide loader
     quoteText.textContent = quote.text;
-
+    complete();
 }
 
 
