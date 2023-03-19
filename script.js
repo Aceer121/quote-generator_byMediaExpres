@@ -70,4 +70,3 @@ twitterBtn.addEventListener('click', tweetQuote);
 // On load
 // getQuotes();
 newQuote();
-complete();
