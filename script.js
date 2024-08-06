@@ -8,13 +8,13 @@ const loader = document.getElementById('loader');
 
 // let apiQuotes = [];
 
-// Show loading not working trough localQuotes
+// Show loading not working through localQuotes
 function loading() {
     loader.hidden = false;
     quoteContainer.hidden = true;
 }
 
-// Show loading not working trough localQuotes
+// Show loading not working through localQuotes
 function complete() {
     quoteContainer.hidden = false;
     loader.hidden = true;
@@ -33,7 +33,7 @@ function newQuote() {
     } else {
         authorText.textContent = quote.author;
     }
-// check quote lenght to determiine styling - 120 is number of characters
+// check quote length to determine styling - 120 is number of characters
     if (quote.text.length > 120) {
         quoteText.classList.add('long-quote');
     } else {
